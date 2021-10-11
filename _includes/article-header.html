@@ -1,6 +1,8 @@
 {%- include snippets/get-article-title.html article=include.article-%}
 {%- assign _article_title = __return -%}
 
+{%- assign _article_category = include.article.category | default: layout.category -%}
+
 {%- if include.html != false -%}
 
   {%- include snippets/assign.html
@@ -13,9 +15,20 @@
     source0=layout.show_edit_on_github source1=include.article.show_edit_on_github -%}
   {%- assign _show_edit_on_github = __return -%}
 
+  {%- include snippets/assign.html
+    target=site.data.variables.default.page.show_category
+    source0=layout.show_category source1=include.article.show_category -%}
+  {%- assign _show_category = __return -%}
+
   {%- if _show_title or _show_edit_on_github -%}
     <div class="article__header">
       {%- if _show_title -%}
+        {%- if _show_category -%}
+        <p>
+          <i class="fas fa-folder-open"></i>
+          <a class="button button--secondary button--pill button--sm">{{ _article_category }}</a>
+        </p>
+        {%- endif -%}
         <header><h1>{{ _article_title }}</h1></header>
       {%- endif -%}
       {%- if _show_edit_on_github -%}

@@ -4,6 +4,7 @@ tags: 잡담
 category: 잡담
 aside:
   toc: true
+show_category: true
 ---
 
 긴 방황을 끝내고 돌고 돌아 GitHub 블로그로 돌아왔습니다.
