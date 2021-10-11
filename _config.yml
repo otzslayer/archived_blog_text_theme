@@ -207,7 +207,7 @@ defaults:
       type: posts
     values:
       layout: article
-      sharing: true
+      sharing: false
       license: false
       show_edit_on_github: false
       show_subscribe: true
