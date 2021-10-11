@@ -19,7 +19,7 @@
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: tomorrow-night # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : # the base hostname & protocol for your site e.g. https://www.someone.com
-baseurl : /post # does not include hostname
+baseurl : # does not include hostname
 title   : "Jay's Blog"
 description: > # this means to ignore newlines until "Language & timezone"
   "짧은 지식들을 긴 기억으로 남기기 위한 곳입니다."
