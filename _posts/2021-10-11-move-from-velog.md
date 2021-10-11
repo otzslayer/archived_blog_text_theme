@@ -2,7 +2,7 @@
 title: Velog에서 이사 옵니다.
 tags: 잡담
 category: 잡담
-asdie:
+aside:
   toc: true
 ---
 
