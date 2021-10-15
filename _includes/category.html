@@ -93,7 +93,11 @@
       {%- endfor -%}
       {%- if include.group_by == 'category' -%}
         {%- assign _currentcategory = _article.category -%}
+        {%- if _currentcategory != _category -%}
+        {%- unless forloop.first -%}</ul></section>{%- endunless -%}
           <section><h2 class="article-list__group-header">{{ _currentcategory }}</h2><ul class="items">
+          {%- assign _category = _currentcategory -%}
+        {%- endif -%}
       {%- endif -%}
       {%- include snippets/get-locale-string.html key='ARTICLE_DATE_FORMAT' -%}
       <li class="item" itemscope itemtype="http://schema.org/BlogPosting" data-tags="{{ _tags }}">
