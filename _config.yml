@@ -118,7 +118,7 @@ sharing:
 ## => Comments
 ##############################
 comments:
-  provider: disqus # false (default), "disqus", "gitalk", "valine", "custom"
+  provider: custom # false (default), "disqus", "gitalk", "valine", "custom"
 
   ## Disqus
   disqus:
@@ -142,6 +142,12 @@ comments:
     placeholder : # Prompt information
     visitor     : # false (default)
     meta        : # "[nick, mail, link]" (default) nickname, E-mail, Personal-site
+
+  utterances:
+    enable: true
+    repo: otzslayer/otzslayer.github.io
+    issue_term: title
+    theme: github-light
 
 
 ## => Pageview

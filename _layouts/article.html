@@ -16,7 +16,7 @@ type: article
   {%- if _sharing -%}
     <section class="article__sharing d-print-none">{%- include sharing.html -%}</section>
   {%- endif -%}
-
+{% comment %} 
   <br></br>
   <div id="disqus_thread"></div>
   <script>
@@ -36,8 +36,12 @@ type: article
       (d.head || d.body).appendChild(s);
       })();
   </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> {% endcomment %}
 
+  <div class="article__comment">
+    {%- include comments-providers/utterances.html -%}
+  </div>
+  
   <div class="d-print-none">
     {%- include article-footer.html -%}
     {%- include article-section-navigator.html -%}
