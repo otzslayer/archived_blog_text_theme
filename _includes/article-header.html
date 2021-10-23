@@ -2,6 +2,7 @@
 {%- assign _article_title = __return -%}
 
 {%- assign _article_category = include.article.category | default: layout.category -%}
+{%- assign _paths_category = site.paths.category | default: site.data.variables.default.paths.category -%}
 
 {%- if include.html != false -%}
 
@@ -24,9 +25,11 @@
     <div class="article__header">
       {%- if _show_title -%}
         {%- if _show_category -%}
+        {%- assign _category_path = _paths_category | append: '?tag=' -%}
         <p>
           <i class="fas fa-folder-open"></i>
-          <a class="button button--secondary button--pill button--sm">{{ _article_category }}</a>
+          <a class="button button--secondary button--pill button--sm"
+            href="{{ _category_path | append: _article_category}}">{{ _article_category }}</a>
         </p>
         {%- endif -%}
         <header><h1>{{ _article_title }}</h1></header>

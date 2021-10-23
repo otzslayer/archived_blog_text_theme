@@ -7,7 +7,7 @@
 
 {%- assign _sorted_list = include.articles -%}
 {%- if include.group_by == 'category' -%}
-  {%- assign _sorted_list = _sorted_list | sort: 'date' -%}
+  {%- assign _sorted_list = _sorted_list | sort: 'category' -%}
 {%- endif -%}
 {%- if include.reverse -%}
   {%- assign _sorted_list = _sorted_list | reverse -%}
@@ -83,7 +83,7 @@
 
     {%- elsif include.type == 'brief' -%}
       {%- assign _tags = '' -%}
-      {%- for _tag in _article.tags -%}
+      {%- for _tag in _article.category -%}
         {%- assign _tag_encode = _tag | strip | url_encode -%}
         {%- if forloop.last -%}
           {%- assign _tags = _tags | append: _tag_encode -%}
