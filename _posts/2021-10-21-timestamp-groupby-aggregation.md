@@ -1,7 +1,7 @@
 ---
 title: Pandas에서 Timestamp의 Group-by Aggregation
 tags: [pandas, Datetime]
-category: Python
+category: Pandas
 aside:
   toc: true
 show_category: true
