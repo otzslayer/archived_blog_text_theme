@@ -34,6 +34,7 @@
   {%- endif -%}
 
   {%- assign _paths_archive = site.paths.archive | default: site.data.variables.default.paths.archive -%}
+  {%- assign _paths_category = site.paths.category | default: site.data.variables.default.paths.category -%}
 
   {%- if _show_tags or _show_author or _show_date or _pageview -%}
     <div class="article__info clearfix">
@@ -41,8 +42,16 @@
 
         <ul class="left-col menu">
           {%- assign _tag_path = _paths_archive | append: '?tag=' -%}
+          {%- assign _cat_path = _paths_category | append: '?tag=' -%}
           {%- include snippets/prepend-baseurl.html path=_tag_path -%}
 
+          {%- assign _category = include.article.category -%}
+          <i class="fas fa-folder-open"></i>
+            <li>
+              <a class="button button--secondary button--pill button--sm"
+                href="{{ _cat_path | append: _category }}">{{ _category }}</a>
+            </li>
+          &emsp;
           <i class="fas fa-tags"></i>
           {%- for _tag in include.article.tags -%}
             {%- assign _tag_path = __return -%}
