@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://otzslayer.github.io/sitemap
+Sitemap: https://otzslayer.github.io/sitemap.xml
