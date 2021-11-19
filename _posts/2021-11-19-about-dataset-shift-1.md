@@ -63,6 +63,13 @@ Covariate Shift는 입력 피처와 레이블과의 관계는 그대로인 반�
 
 $$P_{tr}(Y \mid X) = P_{ts} (Y \mid X) \quad \text{and} \quad P_{tr}(X) \neq P_{ts}(X)$$
 
+Covariate Shift가 발생하는 주요 원인은 크게 두 가지로 볼 수 있습니다. [4]
+
+- Sample Selection Bias
+    - 데이터 수집 과정에서 발생하는 시스템적인 결함입니다. 이 경우엔 학습 데이터를 모집단에서 균일하지 못하게 선택하여 발생하게 됩니다.
+- Non-stationary Environments
+    - 학습 환경이 테스트 환경하고 다를 때 발생할 수 있습니다. 보통 시간적 또는 공간적 변화로 인해 발생합니다.
+
 어떤 집단의 폐암 발병률을 예측한다고 가정해봅시다. 데이터에 많은 피처가 있지만 그 중에 흡연량에 대한 피처가 있습니다. 흡연량이 높을 수록 폐암 발병률이 높아진다는 것은 잘 알려진 관계입니다. 최초 모델을 학습할 때에는 해당 집단의 평균적인 흡연량이 매우 낮았습니다. 그러다보니 흡연량이 높은 집단에 대한 학습은 많이 이루어지지 못했습니다.. 그럼에도 학습 성능은 매우 좋았습니다. 시간이 흘러 동일 집단에 대해 다시 폐암 발병률을 예측하려 했는데, 이번에는 흡연량이 과거에 비해 전체적으로 높아졌습니다. **흡연량이 높아짐에 따라 폐암 발병률이 높아진다는 관계는 변함이 없지만 높은 흡연량에 대한 학습이 잘 이루어지지 않았기 때문에 예측에 대한 성능이 급격히 낮아졌습니다.**
 
 다른 예로는 이미지 분류가 있는데요. 오렌지, 파인애플, 바나나 사진들을 학습하여 분류하는 네트워크를 만든다고 가정해봅시다. 학습 데이터에선 오렌지, 파인애플 사진이 많았고 학습 성능도 당연히 더 좋았습니다. 그런데 실제 테스트셋에는 바나나 사진들이 많이 있었고 결국 학습 대비 테스트 성능이 매우 낮아지게 되었습니다. 이 역시 입력 데이터에 대한 레이블의 관계는 바뀌지 않았지만 입력 데이터의 분포가 달라진 경우입니다.
@@ -87,6 +94,8 @@ Prior Probability Shift는 입력 피처와 레이블과의 관계는 역시 그
 
 [1] Stewart, M. (Dec 21, 2019). Understanding Dataset Shift. https://towardsdatascience.com/understanding-dataset-shift-f2a5a262a766
 
-[2] Berkowitz, J (Mar 23, 2021). Distribution Shift and Audio Data. https://www.iqt.org/distribution-shift-and-audio-data/
+[2] Berkowitz, J. (Mar 23, 2021). Distribution Shift and Audio Data. https://www.iqt.org/distribution-shift-and-audio-data/
 
 [3] Quiñonero-Candela, J., Sugiyama, M., Lawrence, N. D., & Schwaighofer, A. (Eds.). (2009). Dataset shift in machine learning. Mit Press.
+
+[4] Das, S. (Nov 8, 2021). Best Practices for Dealing With Concept Drift. https://neptune.ai/blog/concept-drift-best-practices
