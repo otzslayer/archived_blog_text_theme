@@ -7,7 +7,7 @@ aside:
 show_category: true
 ---
 
-Ray를 이용한 병렬 처리는 정말 간단합니다.
+Ray를 이용한 Python 병렬 처리 방법을 알아보도록 하겠습니다. 😄
 
 <!--more-->
 
