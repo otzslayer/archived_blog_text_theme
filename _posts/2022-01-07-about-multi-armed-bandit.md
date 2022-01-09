@@ -186,7 +186,7 @@ $$
 - $D = \{(a_i, r_i) \}$
 - Parameter $\theta$
 - Likelihood function $P(r \mid a, \theta)$
-- Prior distribution $P(\theta)
+- Prior distribution $P(\theta)$
   - 나중에 Conjugate prior를 이용하여 계산하게 됩니다.
   
 여기서 Thompson sampling은 보상 기대치를 최대화할 확률이 높은 행동을 취하도록 구성되며, 행동 $a^\prime$은 다음 확률에 따라서 선택됩니다.
@@ -198,14 +198,15 @@ $$
 실제로 사용할 때는 파라미터 $\theta^*$를 사후 분포 $P(\theta \mid D)$에서 샘플링하고, 다음의 샘플된 파라미터에 대한 보상 기댓값을 최대화하는 행동을 선택합니다.
 
 $$
-a^\prime = \arg\max_a \mathbb{E}(r\ mid a, \theta^*)
+a^\prime = \arg\max_a \mathbb{E}(r \mid a, \theta^*)
 $$
 
 Thompson sampling의 알고리즘은 다음과 같습니다.
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-07-about-multi-armed-bandit/thompson_sampling.png" alt="Thompson sampling" style="zoom:40%;" />
+    <img src="/assets/images/2022-01-07-about-multi-armed-bandit/thompson_sampling.png"
+       alt="Thompson sampling" style="zoom:40%;" />
     <figcaption style="text-align: center;">Reference : [8]</figcaption>
   </figure>
 </center>
