@@ -1,0 +1,31 @@
+<script src="/assets/darkmode-js.min.js"></script>
+<script>
+  const options = {
+    bottom: '64px', // default: '32px'
+    right: 'unset', // default: '32px'
+    left: '32px', // default: 'unset'
+    time: '0.5s', // default: '0.3s'
+    mixColor: '#ddd', // default: '#fff'
+    backgroundColor: '#fff',  // default: '#fff'
+    buttonColorDark: '#100f2c',  // default: '#100f2c'
+    buttonColorLight: '#fff', // default: '#fff'
+    saveInCookies: true, // default: true,
+    label: '🌓', // default: ''
+    autoMatchOsTheme: true // default: true
+  }
+  function addDarkmodeWidget() {
+    new Darkmode(options).showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
+
+<style>
+    .darkmode--activated img,
+    .darkmode--activated button {
+        isolation: isolate;
+        mix-blend-mode: difference;
+    }
+    .darkmode-layer, .darkmode-toggle {
+        z-index: 500;
+    }
+</style>
