@@ -117,6 +117,49 @@ repos:
 - [좋은 git 커밋 메시지를 작성하기 위한 7가지 약속](https://meetup.toast.com/posts/106)
 - [커밋 메시지 가이드 by Romulo Oliveira](https://github.com/RomuloOliveira/commit-messages-guide/blob/master/README_ko-KR.md)
 
+### 커밋 메시지 템플릿
+
+우선 사용할 커밋 메시지 템플릿을 정해야 하는데요.
+구글에 검색하면 가장 많이 나오는 형태의 템플릿을 예로 들겠습니다.
+
+```text
+# <type>: <subject>
+##### Subject 50 characters ################# -> |
+
+
+# Body Message
+######## Body 72 characters ####################################### -> |
+
+# Issue Tracker Number or URL
+
+# --- COMMIT END ---
+# Type can be
+#   feat    : new feature
+#   fix     : bug fix
+#   refactor: refactoring production code
+#   style   : formatting, missing semi colons, etc; no code change
+#   docs    : changes to documentation
+#   test    : adding or refactoring tests
+#             no productin code change
+#   chore   : updating grunt tasks etc
+#             no production code change
+# ------------------
+# Commit rules:
+#   Capitalize the subject line
+#   Use the imperative mood in the subject line
+#   Do not end the subject line with a period
+#   Separate subject from body with a blank line
+#   Use the body to explain what and why vs. how
+#   Can use multiple lines with "-" for bullet points in body
+# ------------------
+```
+해당 내용이 담긴 파일을 `.gitmessage` 라는 이름으로 현재 Repository 안에 있는 `.git` 폴더 안에 넣어줍니다.
+그리고 Git 설정값중 커밋 템플릿을 해당 파일로 설정합니다.
+
+```bash
+$ git config --local commit.template .git/.gitmessage
+```
+
 ### Hook 적용
 
 우선 어떤 형태로 Hook을 적용했는지 알아보도록 하겠습니다.
