@@ -5,7 +5,7 @@
     right: 'unset', // default: '32px'
     left: '32px', // default: 'unset'
     time: '0.5s', // default: '0.3s'
-    mixColor: '#ddd', // default: '#fff'
+    mixColor: '#fff', // default: '#fff'
     backgroundColor: '#fff',  // default: '#fff'
     buttonColorDark: '#100f2c',  // default: '#100f2c'
     buttonColorLight: '#fff', // default: '#fff'
@@ -20,12 +20,73 @@
 </script>
 
 <style>
-    .darkmode--activated img,
-    .darkmode--activated button {
+    .darkmode--activated figure,
+    .darkmode--activated button,
+    .darkmode--activated div.highlight,
+    .darkmode--activated ul.toc.toc--ellipsis,
+    .darkmode--activated aside.page__aside.js-page-aside.fixed {
         isolation: isolate;
         mix-blend-mode: difference;
     }
+
     .darkmode-layer, .darkmode-toggle {
         z-index: 500;
+    }
+    .darkmode--activated .article__content blockquote {
+      color: #222;
+    }
+    .darkmode--activated figcaption{
+      color: #DDD;
+    }
+    .darkmode--activated figcaption a,
+    .darkmode--activated figcaption a:link,
+    .darkmode--activated figcaption a:visited {
+      color: #fc4d50;
+    }
+    .darkmode--activated a,
+    .darkmode--activated a:link,
+    .darkmode--activated a:visited,
+    .darkmode--activated .root[data-is-touch="false"] a:hover {
+      color: #16A4A8
+    }
+    .darkmode--activated ul.toc .toc-h1 a,
+    .darkmode--activated ul.toc .toc-h1 a:link,
+    .darkmode--activated ul.toc .toc-h1 a:visited,
+    .darkmode--activated ul.toc .toc-h2 a,
+    .darkmode--activated ul.toc .toc-h2 a:link,
+    .darkmode--activated ul.toc .toc-h2 a:visited,
+    .darkmode--activated ul.toc .toc-h3 a,
+    .darkmode--activated ul.toc .toc-h3 a:link,
+    .darkmode--activated ul.toc .toc-h3 a:visited,
+    .darkmode--activated ul.toc .toc-h4 a, 
+    .darkmode--activated ul.toc .toc-h4 a:link,
+    .darkmode--activated ul.toc .toc-h4 a:visited, 
+    .darkmode--activated ul.toc .toc-h5 a,
+    .darkmode--activated ul.toc .toc-h5 a:link,
+    .darkmode--activated ul.toc .toc-h5 a:visited, 
+    .darkmode--activated ul.toc .toc-h6 a, 
+    .darkmode--activated ul.toc .toc-h6 a:link,
+    .darkmode--activated ul.toc .toc-h6 a:visited {
+      color: #ddd
+    }
+    .darkmode--activated ul.toc .toc-h1.active a,
+    .darkmode--activated ul.toc .toc-h1.active a:link,
+    .darkmode--activated ul.toc .toc-h1.active a:visited,
+    .darkmode--activated ul.toc .toc-h2.active a,
+    .darkmode--activated ul.toc .toc-h2.active a:link,
+    .darkmode--activated ul.toc .toc-h2.active a:visited,
+    .darkmode--activated ul.toc .toc-h3.active a,
+    .darkmode--activated ul.toc .toc-h3.active a:link,
+    .darkmode--activated ul.toc .toc-h3.active a:visited,
+    .darkmode--activated ul.toc .toc-h4.active a, 
+    .darkmode--activated ul.toc .toc-h4.active a:link,
+    .darkmode--activated ul.toc .toc-h4.active a:visited, 
+    .darkmode--activated ul.toc .toc-h5.active a,
+    .darkmode--activated ul.toc .toc-h5.active a:link,
+    .darkmode--activated ul.toc .toc-h5.active a:visited, 
+    .darkmode--activated ul.toc .toc-h6.active a, 
+    .darkmode--activated ul.toc .toc-h6.active a:link,
+    .darkmode--activated ul.toc .toc-h6.active a:visited {
+      color: #fc4d50
     }
 </style>
