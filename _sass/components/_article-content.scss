@@ -43,16 +43,22 @@
     @include horizontal-rules();
   }
   blockquote {
-    padding-left: map-get($spacers, 3);
+    // padding-left: map-get($spacers, 3);
     font-size: map-get($base, font-size);
-    color: $text-color-l;
-    @include split-line(left, 4px, $border-color);
+    // color: $text-color-l;
+    color: #295496;
+    border-radius: 4px;
+    padding: 10px 16px;
+    background-color: #e5f4fd;
+    position: relative;
+    // border-left: none;
+    @include split-line(left, 4px, #295496);
     p {
       margin: map-get($spacers, 2) 0;
     }
-    & > :last-child {
-      margin-bottom: 0;
-    }
+    // & > :last-child {
+    //   margin-bottom: 0;
+    // }
   }
   img:not(.emoji) {
     max-width: 100%;

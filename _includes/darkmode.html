@@ -24,7 +24,8 @@
     .darkmode--activated button,
     .darkmode--activated div.highlight,
     .darkmode--activated ul.toc.toc--ellipsis,
-    .darkmode--activated aside.page__aside.js-page-aside.fixed {
+    .darkmode--activated aside.page__aside.js-page-aside.fixed,
+    .darkmode--activated .article__content blockquote {
         isolation: isolate;
         mix-blend-mode: difference;
     }
@@ -32,9 +33,9 @@
     .darkmode-layer, .darkmode-toggle {
         z-index: 500;
     }
-    .darkmode--activated .article__content blockquote {
+    {% comment %} .darkmode--activated .article__content blockquote {
       color: #222;
-    }
+    } {% endcomment %}
     .darkmode--activated figcaption{
       color: #DDD;
     }
