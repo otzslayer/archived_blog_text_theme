@@ -118,7 +118,7 @@ $$
 
 각 슬롯머신 $i$에 대한 Softmax 확률값인 $P(i)$를 $\varepsilon$-greedy 알고리즘처럼 수행하면 됩니다.
 
-여기서 확률을 조정하는 파라미터인 $\tau$에 대해서 더 자세히 알아보도록 하겠습니다. 위 [Eqn. 1](#mjx-eqn-eq1)에서 우변을 $e^\frac{r_i}{\tau}$로 나누면 다음과 같습니다.
+여기서 확률을 조정하는 파라미터인 $\tau$에 대해서 더 자세히 알아보도록 하겠습니다. $\eqref{eq1}$ 에서 우변을 $e^\frac{r_i}{\tau}$로 나누면 다음과 같습니다.
 
 $$
 P(i) = \dfrac{e^{r_i / \tau}}{\sum e^{r_k / \tau}} = \dfrac{1}{1 + \underline{\sum_{k \neq i} e^{\frac{1}{\tau}(r_k - r_i)}} \cdots (*)} \label{eq2}\tag{2}
@@ -163,7 +163,7 @@ $$
 위 식은 [Hoeffding's Inequality](https://en.wikipedia.org/wiki/Hoeffding's_inequality)를 통해 도출된다고 알려져 있습니다.
 해당 내용은 본 포스트에서 다루지는 않겠습니다.
 
-[Eqn. 3](#mjx-eqn-eq3)에 따르면 UCB1 알고리즘은 처음엔 $t$가 작고 $n_i$도 작기 때문에 보상이 좋은 슬롯머신을 선택하면서 탐색이 덜 이루어진 슬롯머신을 선택하게 됩니다. ($t$는 log scale, $n_i$는 linear scale이기 때문입니다)
+$\eqref{eq3}$ 에 따르면 UCB1 알고리즘은 처음엔 $t$가 작고 $n_i$도 작기 때문에 보상이 좋은 슬롯머신을 선택하면서 탐색이 덜 이루어진 슬롯머신을 선택하게 됩니다. ($t$는 log scale, $n_i$는 linear scale이기 때문입니다)
 하지만 어느 정도 많은 탐색을 수행하였다면 현재까지의 보상에 더 비중을 둔 결과를 얻게 됩니다.
 
 $\varepsilon$-greedy나 Softmax 보다는 더 좋은 퍼포먼스를 보여주는 알고리즘입니다.
