@@ -46,13 +46,13 @@
     // padding-left: map-get($spacers, 3);
     font-size: map-get($base, font-size);
     // color: $text-color-l;
-    color: #295496;
+    color: $text-color-theme-light;
     border-radius: 4px;
     padding: 10px 16px;
-    background-color: #e5f4fd;
+    background-color: #FBEFEE;
     position: relative;
     // border-left: none;
-    @include split-line(left, 4px, #295496);
+    @include split-line(left, 4px, #D9685F);
     p {
       margin: map-get($spacers, 2) 0;
     }
