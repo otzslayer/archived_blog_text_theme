@@ -170,7 +170,114 @@ $$
 -   $NDCG@10 (q_1) = \frac{DCG@10(q_1)}{IDCG@10} = 0.54$
 -   $NDCG@10 (q_2) = \frac{DCG@10(q_21.)}{IDCG@10} = 0.30$
 
+## LTR using LightGBM (LambdaRank)
 
+마지막으로 LightGBM을 이용해서 LambdaRank를 간단하게 사용하는 법에 대해 알아보겠습니다.
+우선 데이터는 [LightGBM LambdaRank 예제 페이지](https://github.com/microsoft/LightGBM/tree/master/examples/lambdarank)에 있는 데이터를 사용하겠습니다.
+해당 데이터는 libsvm 포맷으로 다소 생소한 형태인데, 실제 데이터는 아래와 같이 생겼습니다.
+
+```
+1 5:1 7:1 14:1 
+```
+
+첫 번째 열이 class가 되고 나머지 컬럼은 피처의 인덱스와 그 값이 됩니다. `5:1`은 다섯 번째 피처의 값이 1이라는 의미이며, 첫 번째부터 네 번째까지의 피처 값은 모두 0입니다.
+
+파일은 데이터와 그룹의 쿼리 사이즈로 구성되어 있습니다. 쿼리 사이즈는 단순히 숫자들로만 이루어져 있습니다.
+
+```
+27
+18
+67
+...
+```
+
+이 숫자들의 의미는 libsvm 포맷의 데이터에서 첫 27개의 줄은 첫 번째 그룹, 그 다음 18개의 줄은 두 번째 그룹에 속함을 의미합니다.
+항상 쿼리 사이즈의 총합은 데이터의 행 개수와 동일해야 합니다.
+
+데이터를 다운로드한 후 가장 중요한 것은 각 데이터와 쿼리 사이즈의 파일명은 항상 쌍을 이루고 있어야 합니다.
+예를 들어 학습 데이터의 파일명이 `rank.train` 이었다면 쿼리 사이즈는 뒤에 `.query`를 붙인 `rank.train.query` 가 되어야 합니다.
+이렇게 설정해두면 LightGBM에서 단순하 `rank.train` 파일을 불러오더라도 알아서 쿼리 사이즈를 불러올 수 있습니다.
+
+우선 파일을 불러오겠습니다.
+
+{% highlight python linenos %}
+import os
+
+import lightgbm as lgb
+
+data_path = "./data"
+train_file = os.path.join(data_path, "rank.train")
+valid_file = os.path.join(data_path, "rank.test")
+
+train_data = lgb.Dataset(train_file)
+valid_data = lgb.Dataset(valid_file)
+
+{% endhighlight %}
+
+하이퍼파라미터에서 신경써야 할 것은 `objective` `metric`, `ndcg_eval_at` 입니다.
+LambdaRank를 사용하기 위해 `objective`는 `"lambdarank"`로 두고 `metric`은 `"ndcg"`로 설정합니다.
+마지막으로 검증 데이터에 대해서 검증 메트릭을 계산할 때의 기준 설정을 `ndcg_eval_at`으로 해줍니다.
+저는 $NDCG@1$, $NDCG@3$, $NDCG@5$롤 보기 위해서 `[1, 3, 5]`로 설정했습니다.
+
+{% highlight python linenos %}
+
+param = {
+    "task": "train",
+    "objective": "lambdarank",
+    "metric": "ndcg",
+    "num_leaves": 31,
+    "min_data_in_leaf": 50,
+    "bagging_freq": 1,
+    "bagging_fraction": 0.9,
+    "min_sum_hessian_in_leaf": 5.0,
+    "ndcg_eval_at": [1, 3, 5],
+    "learning_rate": 0.01,
+    "num_threads": 8,
+}
+{% endhighlight %}
+
+학습은 다른 경우와 동일하게 LightGBM의 `train` 메서드를 사용합니다.
+
+{% highlight python linenos %}
+bst = lgb.train(
+    param,
+    train_data,
+    valid_sets=[valid_data],
+    valid_names=["valid"],
+    num_boost_round=100,
+    verbose_eval=1,
+    early_stopping_rounds=5,
+)
+{% endhighlight %}
+
+```
+[LightGBM] [Info] Total Bins 6179
+[LightGBM] [Info] Number of data points in the train set: 3005, number of used features: 211
+[1]	valid's ndcg@1: 0.449524	valid's ndcg@3: 0.511721	valid's ndcg@5: 0.565374
+Training until validation scores don't improve for 5 rounds
+[2]	valid's ndcg@1: 0.523048	valid's ndcg@3: 0.561139	valid's ndcg@5: 0.609289
+[3]	valid's ndcg@1: 0.539238	valid's ndcg@3: 0.585265	valid's ndcg@5: 0.631936
+[4]	valid's ndcg@1: 0.546476	valid's ndcg@3: 0.575019	valid's ndcg@5: 0.634157
+[5]	valid's ndcg@1: 0.544571	valid's ndcg@3: 0.595807	valid's ndcg@5: 0.641889
+[6]	valid's ndcg@1: 0.549333	valid's ndcg@3: 0.596228	valid's ndcg@5: 0.639418
+[7]	valid's ndcg@1: 0.51981	valid's ndcg@3: 0.591966	valid's ndcg@5: 0.644924
+[8]	valid's ndcg@1: 0.544571	valid's ndcg@3: 0.603224	valid's ndcg@5: 0.644603
+[9]	valid's ndcg@1: 0.547429	valid's ndcg@3: 0.591924	valid's ndcg@5: 0.644359
+[10]	valid's ndcg@1: 0.530286	valid's ndcg@3: 0.597971	valid's ndcg@5: 0.651305
+[11]	valid's ndcg@1: 0.523619	valid's ndcg@3: 0.604863	valid's ndcg@5: 0.639905
+Early stopping, best iteration is:
+[6]	valid's ndcg@1: 0.549333	valid's ndcg@3: 0.596228	valid's ndcg@5: 0.639418
+```
+
+마지막으로 예측을 할 때는 다른 LightGBM 사용법과 다르게 데이터를 인자로 받지 않고 데이터의 경로를 인자로 받습니다.
+
+{% highlight python linenos %}
+bst.predict(valid_file)
+
+# array([-1.29437752e-02,  4.64725214e-02, -3.56203999e-02, -7.87157477e-03,
+#       ...,
+#       -6.64313516e-02, -6.41849090e-02, -5.12166041e-02,  1.77082568e-02])
+{% endhighlight %}
 
 ## References
 
