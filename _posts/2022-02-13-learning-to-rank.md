@@ -21,7 +21,7 @@ show_category: true
 -   분류 (Classification)
     -   주어진 피처 $\mathbb{X}$에 대해 $N$ 개의 클래스 $y \in {1, 2, \cdots, N}$ 을 예측하기 위해 함수 $f(\mathbb{X})$를 학습
 -   Learning to Rank (LTR)
-    -   **주어진 쿼리 $q$, 관련 있는 아이템 목록 $D$에 대해 ==목록 내의 아이템 순서를 예측==하기 위해 함수 $f(q, D)$를 학습**
+    -   **주어진 쿼리 $q$, 관련 있는 아이템 목록 $D$에 대해 <span style="background-color: #F9EFAA">목록 내의 아이템 순서를 예측</span>하기 위해 함수 $f(q, D)$를 학습**
     -   따라서 학습/검증/테스트 데이터 모두 피처 $\mathbb{X}$에 대해 관련성 $y$을 Label로 하는 데이터 형태를 갖춰야 함
 
 가장 고전적인 LTR 문제는 **웹 검색 랭킹**이 있습니다. 웹 검색 결과의 순위를 매기는 것은 주어진 검색 쿼리에 대해 결과적으로 일치하는 문서 URL의 관련성 순위를 매겨 더 관련성이 높은 문서를 상위에 표시하는 것입니다. 쿼리 $q$와 $n$ 개의 결과 문서 $D = \{d_1, d_2, \cdots, d_n\}$가 주어졌을 때 쿼리와 주어진 문서간 연관성을 예측하기 위해 함수 $f(q, D)$를 학습하는거죠. 이상적으로 $f(q, D)$는 정렬된 목록 $D^*$를 반환해야 하고 주어진 쿼리 $q$에 대해 연관성이 높은 순서대로 정렬되어야 합니다.
@@ -217,7 +217,7 @@ valid_data = lgb.Dataset(valid_file)
 하이퍼파라미터에서 신경써야 할 것은 `objective` `metric`, `ndcg_eval_at` 입니다.
 LambdaRank를 사용하기 위해 `objective`는 `"lambdarank"`로 두고 `metric`은 `"ndcg"`로 설정합니다.
 마지막으로 검증 데이터에 대해서 검증 메트릭을 계산할 때의 기준 설정을 `ndcg_eval_at`으로 해줍니다.
-저는 $NDCG@1$, $NDCG@3$, $NDCG@5$롤 보기 위해서 `[1, 3, 5]`로 설정했습니다.
+저는 $NDCG@1$, $NDCG@3$, $NDCG@5$를 보기 위해서 `[1, 3, 5]`로 설정했습니다.
 
 {% highlight python linenos %}
 
