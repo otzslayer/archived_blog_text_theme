@@ -1,6 +1,6 @@
 ---
 title: Learning to Rank
-tags: [LTR, Learning to Rank, Recsys, 추천 시스템]
+tags: [LTR, Learning to Rank, Recsys, 추천 시스템, MAP, NDCG]
 category: ML
 aside:
   toc: true
