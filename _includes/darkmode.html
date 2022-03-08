@@ -25,17 +25,21 @@
     .darkmode--activated div.highlight,
     .darkmode--activated ul.toc.toc--ellipsis,
     .darkmode--activated aside.page__aside.js-page-aside.fixed,
+    .darkmode--activated article.timeline-comment,
+    .darkmode--activated button.btn.btn-primary,
     .darkmode--activated .article__content blockquote {
         isolation: isolate;
         mix-blend-mode: difference;
+    }
+    .darkmode--activated code.language-plaintext.highlighter-rouge{
+        isolation: isolate;
+        mix-blend-mode: difference;
+        color: #C5411F;
     }
 
     .darkmode-layer, .darkmode-toggle {
         z-index: 500;
     }
-    {% comment %} .darkmode--activated .article__content blockquote {
-      color: #222;
-    } {% endcomment %}
     .darkmode--activated figcaption{
       color: #DDD;
     }
