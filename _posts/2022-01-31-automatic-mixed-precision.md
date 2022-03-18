@@ -192,6 +192,7 @@ pip install -v --disable-pip-version-check --no-cache-dir ./
 AMP를 사용하는 방법은 다음과 같습니다.
 
 {% highlight python linenos %}
+from apex import amp
 # Declare model and optimizer as usual, with default (FP32) precision
 model = torch.nn.Linear(D_in, D_out).cuda()
 optimizer = torch.optim.SGD(model.parameters(), lr=1e-3)
