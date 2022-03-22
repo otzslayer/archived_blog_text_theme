@@ -1,5 +1,5 @@
 ---
-title: PyTorch DataLoade에서 Progress Bar 나타내기
+title: PyTorch DataLoader에서 Progress Bar 나타내기
 tags: [PyTorch, tqdm]
 category: PyTorch
 aside:
