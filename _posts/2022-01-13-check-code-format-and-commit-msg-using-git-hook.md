@@ -201,8 +201,10 @@ def verify_commit_message():
 
         # Remove comments
         for i, line in enumerate(lines):
-            if line.startswith("# Please leave"):
+            if line.startswith("#"):
                 lines = lines[:i]
+                break
+
         # If the last line is whitespace, remove it
         if lines[-1] == "\n":
             lines = lines[:-1]
@@ -220,7 +222,7 @@ def verify_commit_message():
             )
             sys.exit(1)
         # Subject line should follow the rule.
-        if re.match("({})".format(type_regex), lines[0]) is None:
+        if re.match(f"({type_regex})", lines[0]) is None:
             sys.stderr.write(
                 f"\n{bcolors.FAIL} Commit failed: {bcolors.ENDC}The commit message subject line does not follow the rule."
             )
@@ -253,6 +255,7 @@ def verify_commit_message():
                 sys.exit(1)
             # Description starts with "-".
             if not line.startswith("-"):
+                sys.stderr.write(line)
                 sys.stderr.write(
                     f"\n{bcolors.FAIL} Commit failed: {bcolors.ENDC}Description should start with a dash '-'.\n"
                 )
