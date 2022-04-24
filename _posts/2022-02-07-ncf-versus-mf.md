@@ -142,7 +142,7 @@ MLP는 익히 universal function approximator로 알려져 있습니다. 이 때
 
 <center>
   <figure>
-    <img src="/assets/images/2022-02-07-ncf-versus-mf/image-20220207234225741.png" alt="How well a MLP can learn a dot product over embeddings of dimension." style="zoom:50%;" />
+    <img src="/assets/images/2022-02-07-ncf-versus-mf/image-20220207234225741.png" alt="How well a MLP can learn a dot product over embeddings of dimension." style="zoom:50%;" loading="lazy" />
     <figcaption style="text-align: center;">Figure 3. How well a MLP can learn a dot product over embeddings of dimension <i>d</i>.</figcaption>
   </figure>
 </center>

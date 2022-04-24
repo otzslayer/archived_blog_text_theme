@@ -34,7 +34,7 @@ LTR을 해결하기 위해 사용하는 세 가지 접근법은 Pointwise, Pairw
 
 <center>
   <figure>
-    <img src="/assets/images/2022-02-13-learning-to-rank/learning_to_rank.png" alt="Approaches to LTR" style="zoom:50%;" />
+    <img src="/assets/images/2022-02-13-learning-to-rank/learning_to_rank.png" alt="Approaches to LTR" style="zoom:50%;" loading="lazy" />
     <figcaption style="text-align: center;">Image from <a href="https://jobandtalent.engineering/learning-to-retrieve-and-rank-intuitive-overview-part-iii-1292f4259315">[1]</a></figcaption>
   </figure>
 </center>
@@ -128,7 +128,7 @@ $$
 
 <center>
   <figure>
-    <img src="/assets/images/2022-02-13-learning-to-rank/queries.png" alt="Example" style="zoom:25%;" />
+    <img src="/assets/images/2022-02-13-learning-to-rank/queries.png" alt="Example" style="zoom:25%;" loading="lazy" />
     <figcaption style="text-align: center;">An Example for evaluating LTR models</figcaption>
   </figure>
 </center>

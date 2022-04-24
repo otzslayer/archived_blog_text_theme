@@ -27,7 +27,7 @@ show_category: true
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-31-automatic-mixed-precision/floating_point.png" alt="floating point" style="zoom:50%;" />
+    <img src="/assets/images/2022-01-31-automatic-mixed-precision/floating_point.png" alt="floating point" style="zoom:50%;" loading="lazy" />
     <figcaption style="text-align: center;">Image from <a href="https://towardsdatascience.com/understanding-mixed-precision-training-4b246679c7c4">[1]</a></figcaption>
   </figure>
 </center>
@@ -83,7 +83,7 @@ FP16으로 모델을 학습하는 경우 FP32로 학습하는 경우 대비 **�
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-31-automatic-mixed-precision/fp16_representation.png" alt="FP16 Representable range" style="zoom:75%;" />
+    <img src="/assets/images/2022-01-31-automatic-mixed-precision/fp16_representation.png" alt="FP16 Representable range" style="zoom:75%;" loading="lazy" />
     <figcaption style="text-align: center;">Image from <a href="https://docs.nvidia.com/deeplearning/performance/mixed-precision-training/index.html#training">[3]</a></figcaption>
   </figure>
 </center>
@@ -112,14 +112,14 @@ Mixed precision으로 학습하면 학습 속도 뿐만 아니라 성능 향상�
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-31-automatic-mixed-precision/mixed_precision_trains_faster.png" alt="TITLE" style="zoom:50%;" />
+    <img src="/assets/images/2022-01-31-automatic-mixed-precision/mixed_precision_trains_faster.png" alt="TITLE" style="zoom:50%;" loading="lazy" />
     <figcaption style="text-align: center;">Image from <a href="https://nvlabs.github.io/iccv2019-mixed-precision-tutorial/files/dusan_stosic_intro_to_mixed_precision_training.pdf">[4]</a></figcaption>
   </figure>
 </center>
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-31-automatic-mixed-precision/mixed_precision_trains_accurately.png" alt="TITLE" style="zoom:50%;" />
+    <img src="/assets/images/2022-01-31-automatic-mixed-precision/mixed_precision_trains_accurately.png" alt="TITLE" style="zoom:50%;" loading="lazy" />
     <figcaption style="text-align: center;">Image from <a href="https://arxiv.org/abs/1710.03740">[5]</a></figcaption>
   </figure>
 </center>
@@ -128,7 +128,7 @@ Mixed precision으로 학습하면 학습 속도 뿐만 아니라 성능 향상�
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-31-automatic-mixed-precision/loss_scaling.png" alt="Loss scaling" style="zoom:75%;" />
+    <img src="/assets/images/2022-01-31-automatic-mixed-precision/loss_scaling.png" alt="Loss scaling" style="zoom:75%;" loading="lazy" />
     <figcaption style="text-align: center;">Image from <a href="https://towardsdatascience.com/understanding-mixed-precision-training-4b246679c7c4">[1]</a></figcaption>
   </figure>
 </center>

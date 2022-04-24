@@ -52,7 +52,7 @@ MF 모델은 latent space의 각 차원이 서로 독립이며 동일한 가중�
 
 <center>
 	<figure>
-		<img src="/assets/images/2021-12-12-neural-collaborative-filtering/image-20211209163543263.png" alt="image-20211209163543263" style="zoom:50%;" />
+		<img src="/assets/images/2021-12-12-neural-collaborative-filtering/image-20211209163543263.png" alt="image-20211209163543263" style="zoom:50%;" loading="lazy" />
 		<figcaption style="text-align: center;">Figure 1: 내적의 한계</figcaption>
 	</figure>
 </center>
@@ -69,7 +69,7 @@ MF 모델은 latent space의 각 차원이 서로 독립이며 동일한 가중�
 
 <center>
 	<figure>
-		<img src="/assets/images/2021-12-12-neural-collaborative-filtering/image-20211211101048800.png" alt="image-20211211101048800" style="zoom:33%;" />
+		<img src="/assets/images/2021-12-12-neural-collaborative-filtering/image-20211211101048800.png" alt="image-20211211101048800" style="zoom:33%;" loading="lazy" />
 		<figcaption style="text-align: center;">Figure 2: Neural collaborative filtering framework</figcaption>
 	</figure>
 </center>
@@ -136,7 +136,7 @@ Activation function으로는 ReLU가 경험적으로 더 좋은 성능을 냈으
 
 <center>
 	<figure>
-		<img src="/assets/images/2021-12-12-neural-collaborative-filtering/image-20211212180410250.png" alt="image-20211211101048800" style="zoom:33%;" />
+		<img src="/assets/images/2021-12-12-neural-collaborative-filtering/image-20211212180410250.png" alt="image-20211211101048800" style="zoom:33%;" loading="lazy" />
 		<figcaption style="text-align: center;">Figure 3: Neural matrix factorization model</figcaption>
 	</figure>
 </center>
@@ -173,13 +173,15 @@ $$
 
 <center>
 	<figure>
-		<img src="/assets/images/2021-12-12-neural-collaborative-filtering/image-20211212182957260.png" alt="image-20211211101048800" style="zoom:50%;" />
+		<img src="/assets/images/2021-12-12-neural-collaborative-filtering/image-20211212182957260.png" alt="image-20211211101048800" 
+		loading="lazy" style="zoom:50%;" />
 		<figcaption style="text-align: center;">Figure 4: Performance of HR@10 and NDCG@10 <i>w.r.t.</i> the number of predictive factors on the two datasets.</figcaption>
 	</figure>
 </center>
 <center>
 	<figure>
-		<img src="/assets/images/2021-12-12-neural-collaborative-filtering/image-20211212183018664.png" alt="image-20211211101048800" style="zoom:50%;" />
+		<img src="/assets/images/2021-12-12-neural-collaborative-filtering/image-20211212183018664.png" alt="image-20211211101048800" 
+		loading="lazy" style="zoom:50%;" />
 		<figcaption style="text-align: center;">Figure 5: Evaluation of Top-K item recommendation where K ranges from 1 to 10 on the two datasets.</figcaption>
 	</figure>
 </center>
@@ -190,14 +192,16 @@ $$
 
 <center>
 	<figure>
-		<img src="/assets/images/2021-12-12-neural-collaborative-filtering/image-20211212183406526.png" alt="image-20211211101048800" style="zoom:50%;" />
+		<img src="/assets/images/2021-12-12-neural-collaborative-filtering/image-20211212183406526.png" alt="image-20211211101048800" 
+		loading="lazy" style="zoom:50%;" />
 		<figcaption style="text-align: center;">Figure 6: Training loss and recommendation performance of NCF methods <i>w.r.t.</i> the number of iterations on MovieLens (factors=8).</figcaption>
 	</figure>
 </center>
 
 <center>
 	<figure>
-		<img src="/assets/images/2021-12-12-neural-collaborative-filtering/image-20211212183534163.png" alt="image-20211211101048800" style="zoom:50%;" />
+		<img src="/assets/images/2021-12-12-neural-collaborative-filtering/image-20211212183534163.png" alt="image-20211211101048800" 
+		loading="lazy" style="zoom:50%;" />
 		<figcaption style="text-align: center;">Figure 7: Performance of NCF methods <i>w.r.t.</i> the number of negative samples per positive instance (factors=16). The performance of BPR is also shown, which samples only one negative instance to pair with a positive instance for learning.</figcaption>
 	</figure>
 </center>
@@ -207,14 +211,15 @@ $$
 
 <center>
 	<figure>
-		<img src="/assets/images/2021-12-12-neural-collaborative-filtering/image-20211212184100549.png" alt="image-20211211101048800" style="zoom:50%;" />
+		<img src="/assets/images/2021-12-12-neural-collaborative-filtering/image-20211212184100549.png" alt="image-20211211101048800" 
+		loading="lazy" style="zoom:50%;" />
 		<figcaption style="text-align: center;">HR@10 of MLP with different layers.</figcaption>
 	</figure>
 </center>
 
 <center>
 	<figure>
-		<img src="/assets/images/2021-12-12-neural-collaborative-filtering/2021-12-12_18-42-20.png" alt="image-20211211101048800" style="zoom:50%;" />
+		<img src="/assets/images/2021-12-12-neural-collaborative-filtering/2021-12-12_18-42-20.png" alt="image-20211211101048800" loading="lazy" style="zoom:50%;" />
 		<figcaption style="text-align: center;">NDCG@10 of MLP with different layers.</figcaption>
 	</figure>
 </center>

@@ -26,6 +26,7 @@ Git을 사용하다보면 브랜치를 분기하여 다시 병합하는 일이 �
 <center>
   <figure>
     <img src='/assets/images/2021-12-05-git-merge-fast-forward/fast-forward.png'
+    loading="lazy" 
     style="zoom:25%;">
     <figcaption style="text-align: center;">Fast-Forward인 경우</figcaption>
   </figure>
@@ -36,6 +37,7 @@ Git을 사용하다보면 브랜치를 분기하여 다시 병합하는 일이 �
 <center>
   <figure>
     <img src='/assets/images/2021-12-05-git-merge-fast-forward/ff-merge.png'
+    loading="lazy" 
     style="zoom:25%;">
     <figcaption style="text-align: center;">병합하면 브랜치를 따라가게 됩니다.</figcaption>
   </figure>
@@ -47,6 +49,7 @@ Git을 사용하다보면 브랜치를 분기하여 다시 병합하는 일이 �
 <center>
   <figure>
     <img src='/assets/images/2021-12-05-git-merge-fast-forward/non-fast-forward.png'
+    loading="lazy" 
     style="zoom:25%;">
     <figcaption style="text-align: center;">Fast-Forward가 아닌 경우</figcaption>
   </figure>
@@ -58,6 +61,7 @@ Git을 사용하다보면 브랜치를 분기하여 다시 병합하는 일이 �
 <center>
   <figure>
     <img src='/assets/images/2021-12-05-git-merge-fast-forward/no-ff-merge.png'
+    loading="lazy" 
     style="zoom:25%;">
     <figcaption style="text-align: center;">Merge commit을 생성하며 병합됩니다.</figcaption>
   </figure>

@@ -64,7 +64,7 @@ $$
 
 <center>
   <figure>
-    <img src="/assets/images/2022-02-19-bayesian-personalized-ranking/image-20220217235226108.png" alt="New train data" style="zoom:50%;" />
+    <img src="/assets/images/2022-02-19-bayesian-personalized-ranking/image-20220217235226108.png" alt="New train data" style="zoom:50%;" loading="lazy" />
     <figcaption style="text-align: center;">Figure 1.</figcaption>
   </figure>
 </center>
@@ -220,7 +220,7 @@ $$
 
 <center>
   <figure>
-    <img src="/assets/images/2022-02-19-bayesian-personalized-ranking/image-20220219000548647.png" alt="Comparison on convergence" style="zoom:50%;" />
+    <img src="/assets/images/2022-02-19-bayesian-personalized-ranking/image-20220219000548647.png" alt="Comparison on convergence" style="zoom:50%;" loading="lazy" />
     <figcaption style="text-align: center;">Figure 2. Empirical comparison of the convergence of typical user-wise stochastic gradient descent to LearnBPR with bootstrap sampling.</figcaption>
   </figure>
 </center>
@@ -281,7 +281,7 @@ $$
 
 <center>
   <figure>
-    <img src="/assets/images/2022-02-19-bayesian-personalized-ranking/image-20220219124745599.png" alt="Evaluation" style="zoom:50%;" />
+    <img src="/assets/images/2022-02-19-bayesian-personalized-ranking/image-20220219124745599.png" alt="Evaluation" style="zoom:50%;" loading="lazy" />
     <figcaption style="text-align: center;">Figure 3. AUC prediction quality for the Rossmann dataset and a Netflix subsample.</figcaption>
   </figure>
 </center>

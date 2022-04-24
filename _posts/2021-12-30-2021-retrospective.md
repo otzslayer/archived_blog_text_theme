@@ -24,7 +24,7 @@ show_category: true
 
 <center>
 	<figure>
-		<img src="/assets/images/2021-12-30-2021-retrospective/burnout.png" alt="Burnout Syndrome" style="zoom:50%;" />
+		<img src="/assets/images/2021-12-30-2021-retrospective/burnout.png" alt="Burnout Syndrome" style="zoom:50%;" loading="lazy" />
 		<figcaption style="text-align: center;"><a href="https://www.shrm.org/resourcesandtools/hr-topics/employee-relations/pages/workplace-burnout-a-medical-condition.aspx">Image from SHRM</a></figcaption>
 	</figure>
 </center>
@@ -66,7 +66,7 @@ show_category: true
 
 <center>
 	<figure>
-		<img src="/assets/images/2021-12-30-2021-retrospective/leadership.jpg" alt="Leadership" style="zoom:33%;" />
+		<img src="/assets/images/2021-12-30-2021-retrospective/leadership.jpg" alt="Leadership" style="zoom:33%;" loading="lazy" />
 		<figcaption style="text-align: center;"><a href="https://unsplash.com/photos/rxpThOwuVgE">Photo by Austin Distel on Unsplash
 </a></figcaption>
 	</figure>

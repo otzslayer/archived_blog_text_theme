@@ -31,7 +31,7 @@ M1이 처음 나왔을 때부터 관심을 갖고 많은 글을 읽었어서 인
 
 <center>
 	<figure>
-		<img src="/assets/images/2021-12-17-configure-conda-env-in-m1-mac/miniforge.png" alt="miniforge" style="zoom:50%;" />
+		<img src="/assets/images/2021-12-17-configure-conda-env-in-m1-mac/miniforge.png" alt="miniforge" style="zoom:50%;" loading="lazy" />
 		<figcaption style="text-align: center;">Miniforge</figcaption>
 	</figure>
 </center>

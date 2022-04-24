@@ -28,7 +28,7 @@ PM은 처음이라서 더듬어가며 일을 하고 있습니다.
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-20-thought-about-culture/comm.jpeg" alt="Communication" style="zoom:50%;" />
+    <img src="/assets/images/2022-01-20-thought-about-culture/comm.jpeg" alt="Communication" style="zoom:50%;" loading="lazy" />
     <figcaption style="text-align: center;">복잡한 커뮤니케이션이란 참...</figcaption>
   </figure>
 </center>
@@ -49,7 +49,7 @@ PM은 처음이라서 더듬어가며 일을 하고 있습니다.
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-20-thought-about-culture/org_culture.png" alt="Organization Culture" style="zoom:50%;" />
+    <img src="/assets/images/2022-01-20-thought-about-culture/org_culture.png" alt="Organization Culture" style="zoom:50%;" loading="lazy" />
     <figcaption style="text-align: center;">Image from <a href="https://www.aihr.com/blog/types-of-organizational-culture/">AIHR</a></figcaption>
   </figure>
 </center>

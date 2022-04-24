@@ -18,7 +18,7 @@ A/B 테스트를 대체할 수 있는 Multi-armed Bandit에 대해서 알아봅�
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-07-about-multi-armed-bandit/abtest.png" alt="A/B Test" style="zoom:50%;" />
+    <img src="/assets/images/2022-01-07-about-multi-armed-bandit/abtest.png" alt="A/B Test" style="zoom:50%;" loading="lazy" />
     <figcaption style="text-align: center;">Image from <a href="https://www.optimizely.com/optimization-glossary/ab-testing/">optimizely.com</a></figcaption>
   </figure>
 </center>
@@ -43,7 +43,7 @@ A/B 테스트를 대체할 수 있는 Multi-armed Bandit에 대해서 알아봅�
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-07-about-multi-armed-bandit/multi_armed_bandit.png" alt="Multi-armed Bandit" style="zoom:50%;" />
+    <img src="/assets/images/2022-01-07-about-multi-armed-bandit/multi_armed_bandit.png" alt="Multi-armed Bandit" style="zoom:50%;" loading="lazy" />
     <figcaption style="text-align: center;">Image from <a href="https://blog.lightningai.com/multi-armed-bandits-are-the-new-a-b-tests-27dd7b48765b">LightningAI</a></figcaption>
   </figure>
 </center>
@@ -71,7 +71,7 @@ Multi-armed bandit은 **여러 개의 슬롯머신이 있을 때 가장 많은 �
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-07-about-multi-armed-bandit/abtest_mab_comparison.png" alt="A/B Test vs MAB" style="zoom:75%;" />
+    <img src="/assets/images/2022-01-07-about-multi-armed-bandit/abtest_mab_comparison.png" alt="A/B Test vs MAB" style="zoom:75%;" loading="lazy" />
     <figcaption style="text-align: center;">Image from <a href="https://vwo.com/blog/multi-armed-bandit-algorithm/">vwo</a></figcaption>
   </figure>
 </center>
@@ -205,7 +205,7 @@ Thompson sampling의 알고리즘은 다음과 같습니다.
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-07-about-multi-armed-bandit/thompson_sampling.png"
+    <img src="/assets/images/2022-01-07-about-multi-armed-bandit/thompson_sampling.png" loading="lazy" 
        alt="Thompson sampling" style="zoom:40%;" />
     <figcaption style="text-align: center;">Reference : [8]</figcaption>
   </figure>
@@ -217,7 +217,7 @@ Bernoulli distribution에 대한 Conjugate prior는 Beta distribution이기 때�
 
 <center>
   <figure>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Beta_distribution_pdf.svg/650px-Beta_distribution_pdf.svg.png" alt="Beta distribution" style="zoom:50%;" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Beta_distribution_pdf.svg/650px-Beta_distribution_pdf.svg.png" alt="Beta distribution" style="zoom:50%;" loading="lazy" />
     <figcaption style="text-align: center;">Image from <a href="https://en.wikipedia.org/wiki/Beta_distribution">Wikipedia</a></figcaption>
   </figure>
 </center>
@@ -230,7 +230,7 @@ Beta distribution을 사용하는 Thompson sampling 알고리즘은 다음과 �
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-07-about-multi-armed-bandit/beta_thompson.png" alt="Thompson sampling for the Bernoulli bandit" style="zoom:40%;" />
+    <img src="/assets/images/2022-01-07-about-multi-armed-bandit/beta_thompson.png" alt="Thompson sampling for the Bernoulli bandit" style="zoom:40%;" loading="lazy" />
     <figcaption style="text-align: center;">Reference : [8]</figcaption>
   </figure>
 </center>
@@ -242,7 +242,7 @@ Beta distribution을 사용하는 Thompson sampling 알고리즘은 다음과 �
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-07-about-multi-armed-bandit/mab_conparison.png" alt="MAB comparison" style="zoom:75%;" />
+    <img src="/assets/images/2022-01-07-about-multi-armed-bandit/mab_conparison.png" alt="MAB comparison" style="zoom:75%;" loading="lazy" />
     <figcaption style="text-align: center;">Image from <a href="https://www.baeldung.com/cs/k-armed-bandit-problem">Baeldung</a></figcaption>
   </figure>
 </center>
@@ -255,7 +255,7 @@ Thompson sampling의 성능이 가장 좋고 UCB도 나쁘지 않은 퍼포먼�
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-07-about-multi-armed-bandit/pros_cons.png" alt="Pros and Cons" style="zoom:100%;" />
+    <img src="/assets/images/2022-01-07-about-multi-armed-bandit/pros_cons.png" alt="Pros and Cons" style="zoom:100%;" loading="lazy" />
     <figcaption style="text-align: center;">Image from <a href="https://vwo.com/blog/multi-armed-bandit-algorithm/">vwo</a></figcaption>
   </figure>
 </center>

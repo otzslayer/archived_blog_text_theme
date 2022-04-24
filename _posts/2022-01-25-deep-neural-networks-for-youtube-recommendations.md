@@ -26,7 +26,7 @@ Covington, Paul, Jay Adams, and Emre Sargin. "Deep neural networks for youtube r
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-24-deep-neural-networks-for-youtube-recommendations/image-20220116183400139.png" alt="System overview" style="zoom:50%;" />
+    <img src="/assets/images/2022-01-24-deep-neural-networks-for-youtube-recommendations/image-20220116183400139.png" alt="System overview" style="zoom:50%;" loading="lazy" />
     <figcaption style="text-align: center;">Figure 1. System Overview</figcaption>
   </figure>
 </center>
@@ -83,7 +83,7 @@ Hierarchical softmax도 고려해봤지만 너무 복잡하고 애초에 성능�
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-24-deep-neural-networks-for-youtube-recommendations/image-20220118232559811-2515962.png" alt="Model Architecture" style="zoom:50%;" />
+    <img src="/assets/images/2022-01-24-deep-neural-networks-for-youtube-recommendations/image-20220118232559811-2515962.png" alt="Model Architecture" style="zoom:50%;" loading="lazy" />
     <figcaption style="text-align: center;">Figure 2. Architecture of Candidate Generation Network</figcaption>
   </figure>
 </center>
@@ -111,7 +111,7 @@ Figure 2에서 왼쪽 아래에 있는 파란색 벡터들입니다.
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-24-deep-neural-networks-for-youtube-recommendations/image-20220119220809578.png" alt="Example Age" style="zoom:50%;" />
+    <img src="/assets/images/2022-01-24-deep-neural-networks-for-youtube-recommendations/image-20220119220809578.png" alt="Example Age" style="zoom:50%;" loading="lazy" />
     <figcaption style="text-align: center;">Figure 3. Example Age</figcaption>
   </figure>
 </center>
@@ -144,7 +144,7 @@ Figure 2에서 왼쪽 아래에 있는 파란색 벡터들입니다.
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-24-deep-neural-networks-for-youtube-recommendations/image-20220119231328077.png" alt="Choosing labels and input context" style="zoom:50%;" />
+    <img src="/assets/images/2022-01-24-deep-neural-networks-for-youtube-recommendations/image-20220119231328077.png" alt="Choosing labels and input context" style="zoom:50%;" loading="lazy" />
     <figcaption style="text-align: center;">Figure 4. Choosing labels and input context</figcaption>
   </figure>
 </center>
@@ -160,7 +160,7 @@ Figure 4는 이 개념에 관해 설명하고 있습니다.
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-24-deep-neural-networks-for-youtube-recommendations/image-20220120154915513.png" alt="Experiments with Features and Depth" style="zoom:50%;" />
+    <img src="/assets/images/2022-01-24-deep-neural-networks-for-youtube-recommendations/image-20220120154915513.png" alt="Experiments with Features and Depth" style="zoom:50%;" loading="lazy" />
     <figcaption style="text-align: center;">Figure 5. Experiments with Features and Depth</figcaption>
   </figure>
 </center>
@@ -173,7 +173,7 @@ Figure 5는 각 피처 세트별로 네트워크의 깊이가 성능에 어떤 �
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-24-deep-neural-networks-for-youtube-recommendations/image-20220120161055424.png" alt="Experiments with Features and Depth" style="zoom:50%;" />
+    <img src="/assets/images/2022-01-24-deep-neural-networks-for-youtube-recommendations/image-20220120161055424.png" alt="Experiments with Features and Depth" style="zoom:50%;" loading="lazy" />
     <figcaption style="text-align: center;">Figure 6. Architecture of Ranking Network</figcaption>
   </figure>
 </center>

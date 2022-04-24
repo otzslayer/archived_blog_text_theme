@@ -29,7 +29,7 @@ Git Hook은 모든 Git Repository에서 지원합니다.
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-13-check-code-format-and-commit-msg-using-git-hook/git_hook_samples.png" alt="Git Hook Samples" style="zoom:50%;" />
+    <img src="/assets/images/2022-01-13-check-code-format-and-commit-msg-using-git-hook/git_hook_samples.png" alt="Git Hook Samples" style="zoom:50%;" loading="lazy" />
     <figcaption style="text-align: center;">Git Hook 샘플 파일들</figcaption>
   </figure>
 </center>
@@ -81,7 +81,7 @@ repos:
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-13-check-code-format-and-commit-msg-using-git-hook/git_commit.png" alt="After git commit" style="zoom:50%;" />
+    <img src="/assets/images/2022-01-13-check-code-format-and-commit-msg-using-git-hook/git_commit.png" alt="After git commit" style="zoom:50%;" loading="lazy" />
     <figcaption style="text-align: center;"><code>pre-commit</code>이 올바르게 적용되었을 때</figcaption>
   </figure>
 </center>
@@ -284,7 +284,7 @@ exec < /dev/tty
 
 <center>
   <figure>
-    <img src="/assets/images/2022-01-13-check-code-format-and-commit-msg-using-git-hook/commit_failed.png" alt="Commit failed" style="zoom:50%;" />
+    <img src="/assets/images/2022-01-13-check-code-format-and-commit-msg-using-git-hook/commit_failed.png" alt="Commit failed" style="zoom:50%;" loading="lazy" />
     <figcaption style="text-align: center;">잘못된 커밋 메시지를 입력하였을 때</figcaption>
   </figure>
 </center>
