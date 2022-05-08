@@ -12,7 +12,7 @@ Chapter 1: Kubeflow, What It Is and Who It Is For
 <!--more-->
 
 
->   👀 본 포스트는 [Kubeflow for Machine Learning](oreilly.com/library/view/kubeflow-for-machine/9781492050117/) 책을 발췌/요약하면서 필요한 내용은 추가하여 작성하였습니다.
+>   👀 본 포스트는 [Kubeflow for Machine Learning](https://oreilly.com/library/view/kubeflow-for-machine/9781492050117/) 책을 발췌/요약하면서 필요한 내용은 추가하여 작성하였습니다.
 >
 >   -   [Chapter 1: Kubeflow: What It is and Who It Is For](/kubeflow/2022/05/08/kubeflow-chapter1.html)
 >   -   Chapter 2: Hello Kubeflow
