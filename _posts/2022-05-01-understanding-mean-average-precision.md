@@ -38,9 +38,11 @@ $P@i$ 들의 평균이 $AP@K$ 라고 설명하고 있습니다. 잘 모르는 �
 ## Average Precision
 
 실제 $AP@K$는 다음과 같습니다.
+
 $$
 AP@K = \frac{1}{m} \sum^K_{k=1} P(k) \cdot rel(k)
 $$
+
 $rel(k)$ 는  $k$ 번째 아이템이 올바른 추천이라면 $rel(k) = 1$, 아닌 경우 $rel(k) = 0$ 이 되는 함수입니다. 그리고 가장 중요하고 혼동을 유발하는 $m$은 실제 연관 있는 아이템의 수입니다. 즉 실제 연관 있는 아이템이 등장하였을 때의 $P@K$를 계산하고 이 값들의 평균인 거죠. 예를 들어 **두 번째 아이템이 연관 없는 아이템이라면 $P@2$는 $AP@K$를 계산할 때 포함하지 않는 것**이죠.
 
 사실 이런 내용은 제 블로그에 있는 [Learning to Rank 포스트](https://otzslayer.github.io/ml/2022/02/13/learning-to-rank.html)에서도 한 번 다룬 적이 있는데, 깊은 이해를 위해 해당 포스트에서 다룬 예제를 다시 가져오겠습니다.
@@ -51,7 +53,6 @@ $rel(k)$ 는  $k$ 번째 아이템이 올바른 추천이라면 $rel(k) = 1$, �
     <figcaption style="text-align: center;">Figure 2. An Example for evaluating AP@K</figcaption>
   </figure>
 </center>
-
 
 
 위 정의대로 계산한 $AP@10$은 다음과 같습니다.
