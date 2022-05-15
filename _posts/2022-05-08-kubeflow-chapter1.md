@@ -15,7 +15,7 @@ Chapter 1: Kubeflow, What It Is and Who It Is For
 >   👀 본 포스트는 [Kubeflow for Machine Learning](https://oreilly.com/library/view/kubeflow-for-machine/9781492050117/) 책을 발췌/요약하면서 필요한 내용은 추가하여 작성하였습니다.
 >
 >   -   [Chapter 1: Kubeflow: What It is and Who It Is For](/kubeflow/2022/05/08/kubeflow-chapter1.html)
->   -   Chapter 2: Hello Kubeflow
+>   -   [Chapter 2: Hello Kubeflow](/kubeflow/2022/05/15/kubeflow-chapter2.html)
 >   -   Chapter 3: Kubeflow Design: Beyond the Basics
 >   -   Chapter 4: Kubeflow Pipelines
 >   -   Chapter 5: Data and Feature Preparation
@@ -44,8 +44,6 @@ Kubeflow는 데이터 사이언티스트가 학습한 모델을 제품화하거�
     <figcaption style="text-align: center;">Figure 1-1. Model development life cycle</figcaption>
   </figure>
 </center>
-
-
 
 ## Where Does Kubeflow Fit In?
 
