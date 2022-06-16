@@ -200,14 +200,13 @@ def verify_commit_message():
         lines = commit.readlines()
 
         # Remove comments
-        for i, line in enumerate(lines):
-            if line.startswith("#"):
-                lines = lines[:i]
-                break
+        lines = [line for line in lines if not line.startswith("#")]
 
         # If the last line is whitespace, remove it
-        if lines[-1] == "\n":
+        while lines[-1] == "\n":
             lines = lines[:-1]
+            if len(lines) == 0:
+                break
 
         # Empty commit message
         if len(lines) == 0:
@@ -265,7 +264,6 @@ def verify_commit_message():
 
 if __name__ == "__main__":
     verify_commit_message()
-
 {% endhighlight %}
 
 파일명은 `verify_commit_msg.py`로 해당 파일은 `.git/hooks` 폴더에 위치합니다.
