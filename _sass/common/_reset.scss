@@ -147,6 +147,8 @@ figure > img {
 
 figcaption {
   font-size: map-get($base, font-size-sm);
+  padding: 5px 1px 1px 1px;
+  color:rgb(128, 128, 128);
 }
 
 button {
