@@ -17,7 +17,7 @@ Chapter 2: Hello Kubeflow
 >   -   [Chapter 1: Kubeflow: What It is and Who It Is For](/kubeflow/2022/05/08/kubeflow-chapter1.html)
 >   -   [Chapter 2: Hello Kubeflow](/kubeflow/2022/05/15/kubeflow-chapter2.html)
 >   -   [Chapter 3: Kubeflow Design: Beyond the Basics](/kubeflow/2022/06/19/kubeflow-chapter3.html)
->   -   Chapter 4: Kubeflow Pipelines
+>   -   [Chapter 4: Kubeflow Pipelines](/kubeflow/2022/07/10/kubeflow-chapter4.html)
 >   -   Chapter 5: Data and Feature Preparation
 >   -   Chapter 6: Artifact and Metadata Store
 >   -   Chapter 7: Training a Machine Learning Model
