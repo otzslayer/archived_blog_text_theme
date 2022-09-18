@@ -10,6 +10,8 @@ show_category: true
 
 <!--more-->
 
+본 포스트의 내용은 Christoph Molnar의 [Interpretable Machine Learning (IML)](https://christophm.github.io/interpretable-ml-book/)에 수록된 내용을 요약/정리한 것입니다. 더 자세한 내용은 해당 책을 참고하시기 바랍니다.
+
 ## Definition
 
 2017년에 발표된 SHAP(SHapley Additive exPlanations)은 게임 이론적으로 최적화한 Shapley value를 기반에 둔 설명 기법입니다. 예측값의 각 피처의 기여도를 계산하여 데이터 인스턴스 $x$의 예측 결과를 설명하는 것이 목적인데요. 지난 번 포스트에서 다루었던 것처럼 데이터 인스턴스의 각 피처값은 coalition (연합)의 player가 됩니다. Player는 단일 피처값이 될 수도 있고 여러 피처값이 될 수 있습니다. SHAP이 ML 모델 설명에 기여한 부분은 Shapley value 설명을 **Additive feature attribution method**로 표현한 점입니다. 이는 LIME과 Shapley value를 연결하는 관점이 됩니다.
