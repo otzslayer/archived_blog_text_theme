@@ -2,33 +2,100 @@
 layout: page
 titles:
   # @start locale config
-  en      : &EN       Archive
-  en-GB   : *EN
-  en-US   : *EN
-  en-CA   : *EN
-  en-AU   : *EN
-  zh-Hans : &ZH_HANS  归档
-  zh      : *ZH_HANS
-  zh-CN   : *ZH_HANS
-  zh-SG   : *ZH_HANS
-  zh-Hant : &ZH_HANT  歸檔
-  zh-TW   : *ZH_HANT
-  zh-HK   : *ZH_HANT
-  ko      : &KO       아카이브
-  ko-KR   : *KO
-  fr      : &FR       Archives
-  fr-BE   : *FR
-  fr-CA   : *FR
-  fr-CH   : *FR
-  fr-FR   : *FR
-  fr-LU   : *FR
+  en: &EN Archive
+  en-GB: *EN
+  en-US: *EN
+  en-CA: *EN
+  en-AU: *EN
+  zh-Hans: &ZH_HANS 归档
+  zh: *ZH_HANS
+  zh-CN: *ZH_HANS
+  zh-SG: *ZH_HANS
+  zh-Hant: &ZH_HANT 歸檔
+  zh-TW: *ZH_HANT
+  zh-HK: *ZH_HANT
+  ko: &KO 아카이브
+  ko-KR: *KO
+  fr: &FR Archives
+  fr-BE: *FR
+  fr-CA: *FR
+  fr-CH: *FR
+  fr-FR: *FR
+  fr-LU: *FR
   # @end locale config
 ---
 
+<style>
+  input[type="checkbox"] {
+    display: none;
+  }
+  .wrap-collabsible {
+    margin: 1.2rem 0;
+  }
+  .lbl-toggle {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    background: #d9685f;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: all 0.25s ease-out;
+  }
+  .lbl-toggle:hover {
+    color: #fff;
+  }
+  .lbl-toggle::before {
+    content: " ";
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid currentColor;
+    vertical-align: middle;
+    margin-right: 0.7rem;
+    transform: translateY(-2px);
+    transition: transform 0.2s ease-out;
+  }
+  .toggle:checked + .lbl-toggle::before {
+    transform: rotate(90deg) translateX(-3px);
+  }
+  .collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .toggle:checked + .lbl-toggle + .collapsible-content {
+    max-height: 100%;
+  }
+  .toggle:checked + .lbl-toggle {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .collapsible-content .content-inner {
+    background: rgba(251, 239, 238, 0.2);
+    border-bottom: 1px solid rgba(251, 239, 238, 0.45);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 0.5rem 1rem;
+  }
+  .collapsible-content p {
+    margin-bottom: 0;
+  }
+</style>
+
 <div class="layout--archive js-all">
-  {%- include tags.html -%}
+  <div class="wrap-collabsible">
+    <input id="collapsible" class="toggle" type="checkbox" />
+    <label for="collapsible" class="lbl-toggle">Show All Tags</label>
+    <div class="collapsible-content">
+      <div class="content-inner">{%- include tags.html -%}</div>
+    </div>
+  </div>
   <div class="js-result layout--archive__result d-none">
-    {%- include article-list.html articles=site.posts type='brief' show_info=true reverse=true group_by='year' -%}
+    {%- include article-list.html articles=site.posts type='brief'
+    show_info=true reverse=true group_by='year' -%}
   </div>
 </div>
 
