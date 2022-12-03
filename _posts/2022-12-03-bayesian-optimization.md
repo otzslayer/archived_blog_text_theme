@@ -247,15 +247,13 @@ $$
   </figure>
 </center>
 
-## 나가며
-
 ## 레퍼런스
 
-[1] https://distill.pub/2020/bayesian-optimization/
+[1] [https://distill.pub/2020/bayesian-optimization/](https://distill.pub/2020/bayesian-optimization/)
 
-[2] https://medium.com/criteo-engineering/hyper-parameter-optimization-algorithms-2fe447525903
+[2] [https://medium.com/criteo-engineering/hyper-parameter-optimization-algorithms-2fe447525903](https://medium.com/criteo-engineering/hyper-parameter-optimization-algorithms-2fe447525903)
 
-[3] https://towardsdatascience.com/bayesian-optimization-concept-explained-in-layman-terms-1d2bcdeaf12f
+[3] [https://towardsdatascience.com/bayesian-optimization-concept-explained-in-layman-terms-1d2bcdeaf12f](https://towardsdatascience.com/bayesian-optimization-concept-explained-in-layman-terms-1d2bcdeaf12f)
 
 
 
