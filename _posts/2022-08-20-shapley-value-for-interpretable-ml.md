@@ -38,7 +38,7 @@ show_category: true
 -   Players : 해당 단일 인스턴스의 피처들
     -   위 아파트 예제에선 `park-nearby`, `cat-banned`, `area-50`, `floor-2nd` 같은 피처들
 
-**각 피처 (Players)가 예측값에 기여한 정도를 계산하는 것**이 Shapley value의 목적이 되는데요. Shapley value는 모든 가능한 피처 부분 집합에 대한 평균 이익 기여도 (average marginal contribution)이 됩니다. 쉽게 이해하기 위해서 예시를 들어보겠습니다.
+**각 피처 (Players)가 예측값에 기여한 정도를 계산하는 것**이 Shapley value의 목적이 되는데요. Shapley value는 모든 가능한 피처 부분 집합에 대한 평균 이익 기여도 (average marginal contribution)가 됩니다. 쉽게 이해하기 위해서 예시를 들어보겠습니다.
 
 우리는 `cat-banned`라는 피처의 기여도를 계산 해볼겁니다. 다른 피처의 값은 모두 같다고 하고 `cat-banned`만 다른 경우를 생각해보도록 하죠.
 
