@@ -1,6 +1,6 @@
 ---
 title: A worrying Analysis of Recent Neural Recommendation Approaches
-tags: [Recsys, 추천 시스템, 모델 평가]
+tags: [recsys, model-evaluation]
 category: ML
 aside:
   toc: true

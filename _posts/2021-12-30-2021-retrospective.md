@@ -1,6 +1,6 @@
 ---
 title: 2021년 회고
-tags: [잡담, 회고]
+tags: [retrospective, notes]
 category: 잡담
 aside:
   toc: true

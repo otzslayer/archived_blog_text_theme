@@ -1,6 +1,6 @@
 ---
 title: Jupyter Notebook을 쓰지 않게 되는 몇 가지 이유에 대해서
-tags: [Jupyter]
+tags: [jupyter]
 category: 잡담
 aside:
   toc: true

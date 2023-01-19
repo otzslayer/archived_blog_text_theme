@@ -1,6 +1,6 @@
 ---
 title: Pandas에서 Timestamp의 Group-by Aggregation
-tags: [pandas, Datetime]
+tags: [pandas, datetime, groupby, rolling]
 category: Pandas
 aside:
   toc: true

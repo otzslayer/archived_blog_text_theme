@@ -1,6 +1,6 @@
 ---
 title: Successive Halving Algorithm
-tags: [HPO, SHA]
+tags: [hpo, sha, multi-fidelity]
 category: ML
 aside:
   toc: true

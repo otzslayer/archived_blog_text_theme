@@ -1,6 +1,6 @@
 ---
 title: Bayesian Personalized Ranking (BPR)
-tags: [BPR, Recsys, 추천 시스템]
+tags: [bayesian, bpr, recsys, implicit]
 category: ML
 aside:
   toc: true

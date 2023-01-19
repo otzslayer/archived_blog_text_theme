@@ -1,6 +1,6 @@
 ---
 title: Python 로깅 멋지게 하기
-tags: [Python, 로깅]
+tags: [python, logging]
 category: Python
 aside:
   toc: true

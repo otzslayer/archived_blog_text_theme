@@ -1,6 +1,6 @@
 ---
 title: Dataset Shift에 대하여 (2)
-tags: [Dataset Shift, Data, ML]
+tags: [dataset-shift, concept-drift]
 category: ML
 aside:
   toc: true

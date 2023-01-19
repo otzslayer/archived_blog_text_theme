@@ -1,6 +1,6 @@
 ---
 title: PyTorch Loss에서 reduction의 선택
-tags: [PyTorch, Loss, Reduction]
+tags: [pytorch, loss-reduction]
 category: PyTorch
 aside:
   toc: true

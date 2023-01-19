@@ -1,6 +1,6 @@
 ---
 title: Ray를 이용해 Python 병렬 처리 쉽게 하기
-tags: [Ray, 병렬처리, 멀티프로세싱, Python]
+tags: [ray, multiprocessing, python]
 category: Python
 aside:
   toc: true

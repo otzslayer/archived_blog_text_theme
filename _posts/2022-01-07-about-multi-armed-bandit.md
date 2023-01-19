@@ -1,6 +1,6 @@
 ---
 title: Multi-armed Bandit
-tags: [추천 시스템, Multi-armed Bandit, MAB, A/B 테스트]
+tags: [recsys, multi-armed-bandit, mab, ab-test]
 category: 통계
 aside:
   toc: true

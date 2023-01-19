@@ -1,6 +1,6 @@
 ---
 title: 데코레이터를 이용한 간단한 로깅하기
-tags: [Decorator, Logging, Python]
+tags: [decorator, logging, python]
 category: Python
 aside:
   toc: true

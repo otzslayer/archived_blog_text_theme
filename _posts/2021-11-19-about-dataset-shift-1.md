@@ -1,6 +1,6 @@
 ---
 title: Dataset Shift에 대하여 (1)
-tags: [Dataset Shift, Data, ML]
+tags: [dataset-shift, covariate-shift, prior-probability-shift]
 category: ML
 aside:
   toc: true

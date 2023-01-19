@@ -1,6 +1,6 @@
 ---
 title: KFP에서 파이프라인 실행 시 Unauthenticated 에러가 발생할 때
-tags: [Kubeflow, MLOps]
+tags: [kubeflow, kubeflow-pipeline, mlops]
 category: Kubeflow
 aside:
   toc: true

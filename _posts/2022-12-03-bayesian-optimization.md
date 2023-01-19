@@ -1,6 +1,6 @@
 ---
 title: Bayesian Optimization
-tags: [Bayesian Optimization, TPE, GP, HPO]
+tags: [bayesian-optimization, tpe, gp, hpo]
 category: ML
 aside:
   toc: true

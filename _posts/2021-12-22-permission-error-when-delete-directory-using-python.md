@@ -1,6 +1,6 @@
 ---
 title: Python에서 파일 지울 때 권한 오류가 발생하는 경우
-tags: [Python]
+tags: [python, permission-error]
 category: Python
 aside:
   toc: true

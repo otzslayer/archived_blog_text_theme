@@ -1,6 +1,6 @@
 ---
 title: Variational Autoencoder
-tags: [VAE, Autoencoder]
+tags: [vae, autoencoder]
 category: ML
 aside:
   toc: true

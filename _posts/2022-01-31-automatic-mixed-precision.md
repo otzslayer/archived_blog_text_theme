@@ -1,6 +1,6 @@
 ---
 title: Automatic Mixed Precision (AMP)
-tags: [AMP, PyTorch, APEX, Deep Learning]
+tags: [amp, mixed-precision, pytorch, apex]
 category: ML
 aside:
   toc: true

@@ -1,6 +1,6 @@
 ---
 title: Python에서 Uncaught Exception 로깅하는 법
-tags: [Python, 예외처리, 로깅]
+tags: [python, logging, exception]
 category: Python
 aside:
   toc: true

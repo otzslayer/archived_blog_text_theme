@@ -1,6 +1,6 @@
 ---
 title: GitLab 설치와 트러블슈팅
-tags: [GitLab]
+tags: [gitlab, setting-environment]
 category: Git
 aside:
   toc: true

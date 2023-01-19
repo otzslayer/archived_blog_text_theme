@@ -1,6 +1,6 @@
 ---
 title: Kubeflow for ML - Chaper 4
-tags: [Kubeflow, MLOps]
+tags: [kubeflow, mlops]
 category: Kubeflow
 aside:
   toc: true

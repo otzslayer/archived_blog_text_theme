@@ -1,6 +1,6 @@
 ---
 title: Great Expectation 결과 MS Teams로 보내기
-tags: [Great Expectations, 테스트, MLOps]
+tags: [great-expectations, mlops, ms-teams]
 category: MLOps
 aside:
   toc: true

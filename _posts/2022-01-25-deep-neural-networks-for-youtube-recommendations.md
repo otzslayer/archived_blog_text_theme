@@ -1,6 +1,6 @@
 ---
 title: Deep Neural Networks for YouTube Recommendations
-tags: [Recsys, 추천 시스템, YouTube]
+tags: [recsys, youtube, two-stage-model]
 category: ML
 aside:
   toc: true

@@ -1,6 +1,6 @@
 ---
 title: Neural Collaborative Filtering
-tags: [NCF, Recsys, 추천 시스템]
+tags: [ncf, recsys]
 category: ML
 aside:
   toc: true

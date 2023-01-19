@@ -1,6 +1,6 @@
 ---
 title: 연속적인 값에 대해 Group-by operation 수행하기
-tags: [Pandas, Groupby]
+tags: [pandas, groupby]
 category: Pandas
 aside:
   toc: true

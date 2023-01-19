@@ -1,6 +1,6 @@
 ---
 title: Velog에서 이사 옵니다.
-tags: 잡담
+tags: notes
 category: 잡담
 aside:
   toc: true

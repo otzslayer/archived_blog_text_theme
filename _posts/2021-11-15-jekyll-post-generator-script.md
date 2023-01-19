@@ -1,6 +1,6 @@
 ---
 title: Jekyll 블로그 포스트 생성 스크립트
-tags: [기타]
+tags: [notes]
 category: 기타
 aside:
   toc: true

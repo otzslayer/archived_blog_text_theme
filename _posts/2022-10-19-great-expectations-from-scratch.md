@@ -1,6 +1,6 @@
 ---
 title: Great Expectations을 이용한 데이터 파이프라인 검증
-tags: [Great Expectations, 테스트, MLOps]
+tags: [great-expectations, mlops, tdd]
 category: MLOps
 aside:
   toc: true

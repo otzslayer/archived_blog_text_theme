@@ -1,6 +1,6 @@
 ---
 title: 단상 (2021/01/20)
-tags: [조직문화, 잡담, 단상]
+tags: [notes, organizational-culture]
 category: 잡담
 aside:
   toc: true

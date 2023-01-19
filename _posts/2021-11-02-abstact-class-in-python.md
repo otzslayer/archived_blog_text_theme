@@ -1,6 +1,6 @@
 ---
 title: 파이썬에서의 추상 클래스
-tags: [abstract, OOP, Python]
+tags: [abstract, oop, python]
 category: Python
 aside:
   toc: true

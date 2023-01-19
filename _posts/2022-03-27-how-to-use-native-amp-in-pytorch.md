@@ -1,6 +1,6 @@
 ---
 title: PyTorch의 Native Automatic Mixed Precision 사용하기
-tags: [AMP, PyTorch, Deep Learning]
+tags: [amp, mixed-precision, pytorch]
 category: ML
 aside:
   toc: true

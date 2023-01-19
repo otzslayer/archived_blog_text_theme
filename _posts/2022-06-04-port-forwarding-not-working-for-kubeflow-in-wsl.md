@@ -1,6 +1,6 @@
 ---
 title: WSL에서 Kubeflow 포트포워딩이 안될 때
-tags: [WSL, Kubeflow, MLOps]
+tags: [wsl, port-forward, kubeflow, mlops, setting-environment]
 category: Kubeflow
 aside:
   toc: true

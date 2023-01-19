@@ -1,6 +1,6 @@
 ---
 title: SQLAlchemy에서 비밀번호에 '@'이 들어가서 연결에 실패할 때
-tags: [SQLAlchemy, Python]
+tags: [sqlalchemy, encoding]
 category: Python
 aside:
   toc: true

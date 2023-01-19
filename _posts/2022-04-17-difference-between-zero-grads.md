@@ -1,6 +1,6 @@
 ---
 title: model.zero_grad()와 optimizer.zero_grad()의 차이
-tags: [PyTorch, zero_grad]
+tags: [pytorch, zero-grad]
 category: PyTorch
 aside:
   toc: true

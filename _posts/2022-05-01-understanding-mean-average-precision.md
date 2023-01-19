@@ -1,6 +1,6 @@
 ---
 title: Mean Average Precision 이해하기
-tags: [추천 시스템, MAP@K]
+tags: [recsys, metric, map]
 category: ML
 aside:
   toc: true
