@@ -7,10 +7,10 @@ aside:
 show_category: true
 ---
 
+📄 Li, Lisha, et al. "Hyperband: A novel bandit-based approach to hyperparameter optimization." *The Journal of Machine Learning Research* 18.1 (2017): 6765-6816.
 
 <!--more-->
 
-📄 Li, Lisha, et al. "Hyperband: A novel bandit-based approach to hyperparameter optimization." *The Journal of Machine Learning Research* 18.1 (2017): 6765-6816.
 
 ## 들어가며
 
