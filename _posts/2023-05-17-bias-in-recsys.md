@@ -1,5 +1,5 @@
 ---
-title: Bias in Recommender Systems
+title: Biases in Recommender Systems
 tags: [bias, recsys]
 category: ML
 aside:
